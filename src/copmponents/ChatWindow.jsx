@@ -7,8 +7,9 @@ const ChatWindow = () => {
           <div>
                 Header
         </div>
-        ChatWindow
-      
+        <div style={{height:"50rem"}}>
+            ChatWindow
+        </div>
         <div>
             Input
         </div>

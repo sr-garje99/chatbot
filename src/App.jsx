@@ -11,7 +11,7 @@ function App() {
     <>
       
            {count && <ChatWindow/>}
-           <buutton onClick={()=>{setCount(!count)}}>chat</buutton>
+           <buutton style={{float:"right"}}onClick={()=>{setCount(!count)}}>chat</buutton>
     </>
   )
 }
