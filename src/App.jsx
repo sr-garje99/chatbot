@@ -1,17 +1,19 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { StyledEngineProvider,CssBaseline, } from '@mui/material'
 import './App.css'
 import ChatWindow from './copmponents/ChatWindow'
+import {Button} from '@mui/material'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      
+        <StyledEngineProvider injectFirst>
+          <CssBaseline/>
            {count && <ChatWindow/>}
-           <buutton style={{float:"right"}}onClick={()=>{setCount(!count)}}>chat</buutton>
+           <Button style={{float:"right"}}onClick={()=>{setCount(!count)}}>chat</Button>
+        </StyledEngineProvider>
     </>
   )
 }
