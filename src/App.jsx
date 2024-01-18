@@ -1,11 +1,13 @@
 import { useState } from 'react'
 import { StyledEngineProvider,CssBaseline, } from '@mui/material'
 //import './App.css'
-
+import Chatbot from 'react-chatbot-kit'
+import 'react-chatbot-kit/build/main.css'
 
 
 import ChatWindow from './copmponents/ChatWindow'
 import {Button} from '@mui/material'
+import MyComponent from './copmponents/MyComponent'
 //import ChatBot from './copmponents/ChatBot'
 
 function App() {
@@ -16,10 +18,12 @@ function App() {
         <StyledEngineProvider injectFirst>
           <CssBaseline/>
           <div style={{display:"flex",justifyContent:"right",float:"right"}}>
-           {count && <ChatWindow/>}
+           
+           {/* {count && <ChatWindow/>} */}
 
-           <Button style={{float:"left"}}onClick={()=>{setCount(!count)}}>chat</Button>
+           {/* <Button style={{float:"left"}}onClick={()=>{setCount(!count)}}>chat</Button> */}
            {/* <ChatBot/> */}
+           <MyComponent/>
            </div>
         </StyledEngineProvider>
     </>
