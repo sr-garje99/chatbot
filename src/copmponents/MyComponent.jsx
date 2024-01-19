@@ -9,7 +9,9 @@ const MyComponent = () => {
         config={config}
         messageParser={MessageParser}
         actionProvider={ActionProvider}
+        
       />
+      {}
     </div>
   );
 };
