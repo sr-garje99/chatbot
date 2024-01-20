@@ -11,7 +11,7 @@ const MyComponent = () => {
         actionProvider={ActionProvider}
         
       />
-      {}
+      
     </div>
   );
 };
